@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="navlogo" src="https://i.imgur.com/m1wXjqw.png" alt="logo">
+    </div>
+   <img id="banner" src="banner.jpg" alt="Banner">
+  
+    <h1>About Jovian</h1>
+    <div id="about">
+
+        <div id="description">
+
+            <p>At Jovian, we're on a mission to build
+                the world's most highly reputed technical
+                university, and we're building completely
+                online. We offer several beginner friendly
+                courses that are taken by 300,000+ registered
+                users.
+            </p>
+            <p>We also offer 2 industry-focused bootcamps:
+            <ol>
+                <li>
+                    <a href="https://www.jovian.com/full-stack-developer-bootcamp">
+                        Jovian Full Stack Developer Bootcamp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.jovian.com/data-science-bootcamp">
+                        Jovian Data Science Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+         <img alt="team.jpg" src="https://github.com/JovianHQ/web-development-with-html-and-css/blob/main/lesson-1-html-and-css-basics/my-first-web-page/team.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 kzRgrI" height="240" alt="team" id="team">
+
+    </div>
+
+
+
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th>Job Title</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Posted On</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Bengaluru, India</td>
+                <td>₹12,00,000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>New Delhi, India</td>
+                <td>₹15,00,000</td>
+                <td>Feb 1, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>San Francisco, USA</td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td>Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
+        </table>
+              
+        #jobs-table {
+          width: 100%;
+          border: 1px solid grey;
+          border-collapse:collapse;
+        }
+        
+        #jobs-table th {
+          border: 1px solid grey;
+          padding: 4px 8px;
+          text-align: left;
+          background-color: aliceblue;
+        }
+        
+        #jobs-table td {
+          border-right: 1px solid grey;
+          padding: 4px 8px;
+        }
+        
+        
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Bengaluru</td>
+                <td>India</td>
+                <td>₹12,00,000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>₹15,00,000</td>
+                <td>Feb 1, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>San Francisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>ML Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
+        </table>
+             
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Inter;
+        }
+         body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Inter;
+          font-weight: 500;
+        }
+        
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.25rem; }
+        h6 { font-size: 1rem; }
+        
+        #description {
+          width: 50%;
+          padding-right: 8px;
+          font-size: 1.25rem;
+        }
+        
+        <div>
+            <a href="mailto:support@jovian.com?subject=Application%20for%20Frontend%20Developer" style="float:right;" target="_blank">Apply</a>
+            <h3>Frontend Developer</h3>
+            <span class="location">Bengaluru, India</span>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com?subject=Application%20for%20Backend%20Developer" style="float:right;" target="_blank">Apply</a>
+            <h3>Backend Developer</h3>
+            <span class="location">Delhi, India</span>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com?subject=Application%20for%20Data%20Scientist" style="float:right;" target="_blank">Apply</a>
+            <h3>Data Scientist</h3>
+            <span class="location">Mumbai, India</span>
+        </div>
+    </div>
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@jovianhq" target="_blank">
+                    YouTube
+                </a>
+            </li>
+        </ul>
+        <span id="copyright">© 2023, Jovian</span>
+    </div>
+</body>
+
+</html>
